@@ -6,10 +6,10 @@ import 'package:desafio01/models/driver.dart';
 void main() {
   print('Voce deseja realizar uma corrida? Sim ou Não');
   String? answer = stdin.readLineSync();
-  initRide(answer);
+  init(answer);
 }
 
-void initRide(String? answer) {
+void init(String? answer) {
   if (answer == 'Sim' || answer == 'S') {
     loading('Buscando Motorista! Aguarde...');
     findDriver();
